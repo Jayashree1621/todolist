@@ -1,0 +1,134 @@
+/* Modern Background Gradient */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Glassmorphism */
+.home {
+  margin-top: 80px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #00d2ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+/* Input Group */
+.create_form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.create_form input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.create_form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.create_form button {
+  padding: 12px 25px;
+  background: #00d2ff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  color: #1a1a2e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create_form button:hover {
+  background: #33e1ff;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+/* Individual Todo Cards */
+.todo_item {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  margin-top: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+  border-left: 4px solid #00d2ff;
+}
+
+.todo_item:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.no-record h2 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  width: 345px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox .icon {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.task div span {
+  margin: 0px 5px 0px 4px;
+}
+
+.task div .icon {
+  cursor: pointer;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.6);
+}
