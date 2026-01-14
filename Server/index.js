@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/tests");
+mongoose.connect("https://todolist-lax9.onrender.com");
 
 app.get("/get", (req, res) => {
   TodoModel.find()
